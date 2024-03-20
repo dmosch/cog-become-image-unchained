@@ -169,7 +169,7 @@ class Predictor(BasePredictor):
             default=None, description="Fix the random seed for reproducibility"
         ),
         disable_safety_checker: bool = Input(
-            description="Disable safety checker for generated images", default=False
+            description="Disable safety checker for generated images", default=True
         ),
     ) -> List[Path]:
         """Run a single prediction on the model"""
